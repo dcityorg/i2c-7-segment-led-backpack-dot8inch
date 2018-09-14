@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -7341,12 +7342,12 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <parts>
 <part name="FRAME1" library="0" deviceset="FRAME-LETTER-L" device=""/>
 <part name="U$1" library="0" deviceset="DOCFIELD-WHT" device="">
-<attribute name="COMPANYNAME" value="Windy Hill Technology LLC"/>
-<attribute name="COMPANYWEBSITE" value="http://wht.io"/>
-<attribute name="DATE" value="2/29/2016"/>
+<attribute name="COMPANYNAME" value="DCITY"/>
+<attribute name="COMPANYWEBSITE" value="http://dcity.org"/>
+<attribute name="DATE" value="8/28/2018"/>
 <attribute name="DRAWNBY" value="Gary Muhonen"/>
 <attribute name="TITLE" value="I2C 7 Segment Backpack (.8&quot; LED)"/>
-<attribute name="VERSION" value="B"/>
+<attribute name="VERSION" value="C"/>
 </part>
 <part name="U1" library="0" deviceset="AS1115" device="-LP" value="AS1115"/>
 <part name="DISP1" library="0" deviceset="7-SEGMENT-4DIGIT-COUNTER" device="" value="LED1"/>

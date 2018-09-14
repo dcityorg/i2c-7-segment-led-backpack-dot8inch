@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
@@ -169,13 +170,13 @@
 <text x="28.829" y="15.748" size="0.889" layer="21" font="vector" ratio="15" rot="R180">VCC</text>
 <text x="28.829" y="13.081" size="0.889" layer="21" font="vector" ratio="15" rot="R180">GND</text>
 <text x="12.192" y="3.81" size="0.889" layer="21" font="vector" ratio="15">I2C - 7 Segment Backpack</text>
-<text x="12.319" y="2.54" size="0.889" layer="21" font="vector" ratio="15">0.8 inch LED -  (Rev B)</text>
+<text x="12.319" y="2.54" size="0.889" layer="21" font="vector" ratio="15">0.8 inch LED -  (Rev C)</text>
 <text x="7.62" y="38.1" size="0.889" layer="21" font="vector" ratio="15">SET I2C ADDR WITH SJ3 AND SJ4</text>
 <text x="7.62" y="35.56" size="0.889" layer="21" font="vector" ratio="15">BOTH OPEN = 03h</text>
 <text x="24.13" y="36.83" size="0.889" layer="21" font="vector" ratio="15">SJ4 CLOSED = 02h</text>
 <text x="7.62" y="36.83" size="0.889" layer="21" font="vector" ratio="15">SJ3 CLOSED = 01h</text>
 <text x="24.13" y="35.56" size="0.889" layer="21" font="vector" ratio="15">DO NOT CLOSE BOTH</text>
-<text x="33.02" y="3.81" size="0.889" layer="22" font="vector" ratio="15" rot="MR0">I2C 7 SEGMENT BKPK .8" (Rev B)</text>
+<text x="33.02" y="3.81" size="0.889" layer="22" font="vector" ratio="15" rot="MR0">I2C 7 SEGMENT BKPK .8" (Rev C)</text>
 <text x="30.607" y="7.62" size="0.889" layer="21" font="vector" ratio="15" rot="R180">LED1</text>
 <text x="28.067" y="6.985" size="0.889" layer="22" font="vector" ratio="15" rot="MR180">LED1</text>
 <rectangle x1="2.54" y1="33.02" x2="4.953" y2="34.29" layer="43"/>
@@ -208,8 +209,8 @@
 <rectangle x1="39.497" y1="33.401" x2="41.783" y2="35.179" layer="43"/>
 <rectangle x1="29.464" y1="22.352" x2="31.242" y2="23.749" layer="43"/>
 <rectangle x1="17.78" y1="26.924" x2="19.558" y2="28.194" layer="43"/>
-<text x="32.131" y="1.143" size="1.524" layer="21" font="vector" ratio="10">wht.io</text>
-<text x="38.1" y="1.27" size="1.524" layer="22" font="vector" ratio="10" rot="MR0">wht.io</text>
+<text x="27.051" y="1.143" size="1.524" layer="21" font="vector" ratio="10">dcity.org</text>
+<text x="38.1" y="1.27" size="1.524" layer="22" font="vector" ratio="10" rot="MR0">dcity.org</text>
 </plain>
 <libraries>
 <library name="0">
@@ -586,10 +587,14 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="1"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -1204,6 +1209,13 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="35.56" y1="27.7368" x2="35.56" y2="27.57" width="0.1778" layer="1"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 </board>
 </drawing>
 </eagle>
